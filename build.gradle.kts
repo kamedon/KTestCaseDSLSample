@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
     maven {
         val credentials = loadProperties("$rootDir/github.properties")
-        url = uri("https://maven.pkg.github.com/Kamedon/KTestCaseDSL")
+        url = uri("https://maven.pkg.github.com/kamedon/KTestCaseDSL")
         credentials {
             username = credentials.getProperty("user")
             password = credentials.getProperty("password")
@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.kamedon:ktestcasedsl:0.3.0")
+    implementation("com.kamedon:ktestcasedsl:0.4.0")
     testImplementation(kotlin("test"))
 }
 
